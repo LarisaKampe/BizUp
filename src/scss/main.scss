@@ -1,0 +1,40 @@
+@use './nav';
+@use './hero';
+@use './business-fund';
+@use './sections';
+@use './footer';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 740px) {
+    * {
+        font-size: 14px;
+    }
+    .topnav {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 740px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
